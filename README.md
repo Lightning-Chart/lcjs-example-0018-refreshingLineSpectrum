@@ -27,7 +27,7 @@ When compared to a [spectrogram](https://www.arction.com/lightningchart-js-inter
 
 **About performance...**
 
-While there are almost a stupid amount of different Line Chart tools available in web, the wide majority (> 95%) are not designed nor suitable for applications such as this, where the data set is changed in super fast intervals.
+While there are numerous different Line Chart tools available in web, the wide majority (> 95%) are not designed nor suitable for applications such as this, where the data set is changed in super fast intervals.
 
 We at LightningChart have studied various different web data visualization tools to support our mission of being the web chart with the best performance in the world.
 
