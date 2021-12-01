@@ -61,7 +61,7 @@ Direct developer email support can be purchased through a [Support Plan][4] or b
 © Arction Ltd 2009-2020. All rights reserved.
 
 
-[XY chart]: https://www.arction.com/lightningchart-js-api-documentation/v3.1.0/classes/chartxy.html
-[Line Series]: https://www.arction.com/lightningchart-js-api-documentation/v3.1.0/classes/lineseries.html
-[Axis]: https://www.arction.com/lightningchart-js-api-documentation/v3.1.0/classes/axis.html
+[XY chart]: https://www.arction.com/lightningchart-js-api-documentation/v3.3.0/classes/chartxy.html
+[Line Series]: https://www.arction.com/lightningchart-js-api-documentation/v3.3.0/classes/lineseries.html
+[Axis]: https://www.arction.com/lightningchart-js-api-documentation/v3.3.0/classes/axis.html
 
