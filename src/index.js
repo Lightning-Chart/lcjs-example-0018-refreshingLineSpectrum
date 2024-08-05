@@ -2,12 +2,12 @@
  * LightningChartJS example for line chart application with rapidly changing data set
  */
 // Import LightningChartJS
-const lcjs = require('@arction/lcjs')
+const lcjs = require('@lightningchart/lcjs')
 
 // Extract required parts from LightningChartJS.
 const { lightningChart, AutoCursorModes, Themes } = lcjs
 
-const { createSpectrumDataGenerator } = require('@arction/xydata')
+const { createSpectrumDataGenerator } = require('@lightningchart/xydata')
 
 // Create XY Chart
 const chart = lightningChart({
@@ -17,7 +17,7 @@ const chart = lightningChart({
         theme: Themes[new URLSearchParams(window.location.search).get('theme') || 'darkGold'] || undefined,
     })
     .setTitle('Spectrum Line Chart')
-    .setAutoCursorMode(AutoCursorModes.disabled)
+    .setCursorMode(undefined)
 
 // Set static Y axis interval.
 chart.getDefaultAxisY().setScrollStrategy(undefined).setInterval({ start: 0.09, end: 0.9, stopAxisAfter: false })
