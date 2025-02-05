@@ -23,7 +23,7 @@ const chart = lightningChart({
 chart.getDefaultAxisY().setScrollStrategy(undefined).setInterval({ start: 0.09, end: 0.9, stopAxisAfter: false })
 
 // Add Line series
-const series = chart.addLineSeries()
+const series = chart.addPointLineAreaSeries({ dataPattern: 'ProgressiveX' })
 
 // Generate several spectrum data sets that will be displayed on after another.
 createSpectrumDataGenerator()
@@ -39,8 +39,7 @@ createSpectrumDataGenerator()
         const nextSample = () => {
             iSample = (iSample + 1) % dataSet.length
             const sample = dataSet[iSample]
-            // Sample only contains Y values, use `addArrayY` to automatically generate X coordinate for each data point.
-            series.clear().addArrayY(sample)
+            series.setSamples({ yValues: sample })
             requestAnimationFrame(nextSample)
         }
         nextSample()
