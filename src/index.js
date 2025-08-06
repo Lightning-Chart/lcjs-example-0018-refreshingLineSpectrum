@@ -14,6 +14,7 @@ const chart = lightningChart({
             resourcesBaseUrl: new URL(document.head.baseURI).origin + new URL(document.head.baseURI).pathname + 'resources/',
         })
     .ChartXY({
+        legend: { visible: false },
         theme: Themes[new URLSearchParams(window.location.search).get('theme') || 'darkGold'] || undefined,
     })
     .setTitle('Spectrum Line Chart')
@@ -23,7 +24,7 @@ const chart = lightningChart({
 chart.getDefaultAxisY().setScrollStrategy(undefined).setInterval({ start: 0.09, end: 0.9, stopAxisAfter: false })
 
 // Add Line series
-const series = chart.addPointLineAreaSeries({ dataPattern: 'ProgressiveX' })
+const series = chart.addPointLineAreaSeries()
 
 // Generate several spectrum data sets that will be displayed on after another.
 createSpectrumDataGenerator()
